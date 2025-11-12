@@ -9,15 +9,17 @@
 </div>
 
 ## 📋 Descripción
-Sistema bancario completo desarrollado en Java utilizando el patrón arquitectónico MVC (Model-View-Controller). El sistema permite la gestión integral de cuentas bancarias, transacciones, clientes y operaciones financieras con persistencia en base de datos SQL.
+**Simulador de ATM – Empleado Bancario**: Aplicación de escritorio Java para simular funcionalidades bancarias completas. Desarrollado utilizando el patrón arquitectónico **MVC (Model-View-Controller)** con implementación de **control de acceso por roles** y **MySQL** para garantizar la integridad transaccional mediante el uso de **Vistas, Funciones y Triggers** de base de datos.
 
 ## ✨ Características
-- 💳 **Gestión de cuentas:** Creación, consulta y administración de cuentas bancarias
-- 💸 **Transacciones:** Depósitos, retiros, transferencias entre cuentas
-- 👥 **Gestión de clientes:** Registro y administración de información de clientes
-- 🔐 **Seguridad:** Sistema de autenticación y autorización de usuarios
-- 📊 **Reportes:** Generación de reportes financieros y estados de cuenta
-- 💾 **Persistencia:** Base de datos SQL para almacenamiento de información
+- 🏧 **Simulador de ATM:** Interface completa de cajero automático
+- �‍💼 **Sistema de empleados:** Panel de administración bancaria
+- �💳 **Gestión de cuentas:** Creación, consulta y administración de cuentas bancarias
+- 💸 **Transacciones:** Depósitos, retiros, transferencias con validación de integridad
+- 👥 **Control de acceso por roles:** Diferenciación entre clientes y empleados
+- 🔐 **Seguridad transaccional:** Implementación de Triggers y Funciones de DB
+- 📊 **Reportes avanzados:** Generación mediante Vistas SQL optimizadas
+- 💾 **Integridad de datos:** MySQL con Triggers para validaciones automáticas
 - 🖥️ **Interfaz gráfica:** GUI desarrollada con Java Swing
 
 ## 🏛️ Arquitectura
@@ -27,12 +29,14 @@ El proyecto implementa el patrón **MVC (Model-View-Controller)**:
 - 🎮 **Controller:** Controladores para manejar la interacción entre Vista y Modelo
 
 ## 🛠️ Tecnologías Utilizadas
-- **Lenguaje:** Java 8
-- **Base de datos:** SQL (MySQL/PostgreSQL)
-- **Interfaz gráfica:** Java Swing
-- **Persistencia:** JDBC
-- **Build tool:** Maven
-- **Testing:** JUnit
+- **💻 Lenguaje:** Java 8
+- **🗄️ Base de datos:** MySQL con Triggers, Vistas y Funciones
+- **🖥️ Interfaz gráfica:** Java Swing
+- **🔌 Persistencia:** JDBC
+- **🏗️ Arquitectura:** Patrón MVC (Model-View-Controller)
+- **🔧 Build tool:** Maven
+- **🧪 Testing:** JUnit
+- **🔐 Seguridad:** Control de acceso por roles
 
 ## Estructura del Proyecto
 ```
@@ -59,13 +63,14 @@ sistema-bancario-java-sql/
 - Cierre de cuentas
 - Actualización de información de cuentas
 
-### 💰 Operaciones Bancarias
-- 📈 **Depósitos:** Ingreso de dinero a cuentas
-- 📉 **Retiros:** Extracción de fondos con validación de saldo
-- 🔄 **Transferencias:** Movimiento de fondos entre cuentas
-- 🔍 **Consultas:** Verificación de saldos y historial
+### 💰 Operaciones Bancarias (ATM)
+- 📈 **Depósitos:** Ingreso de dinero con validación automática por Triggers
+- 📉 **Retiros:** Extracción de fondos con validación de saldo en tiempo real
+- 🔄 **Transferencias:** Movimiento de fondos con integridad transaccional
+- 🔍 **Consultas:** Verificación de saldos y historial mediante Vistas optimizadas
+- 🏧 **Funciones de ATM:** Simulación completa de cajero automático
 
-### ⚙️ Administración
+### ⚙️ Administración (Empleados)
 - Gestión de clientes y sus datos personales
 - Control de usuarios del sistema
 - Generación de reportes
